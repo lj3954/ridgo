@@ -22,8 +22,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y wget
           go build -o ridgo cmd/ridgoCli/main.go
-          PATH+=:$(pwd)
-          export PATH
+          mkdir dist
+          mv ridgo dist/ridgo
+          echo "${{ github.workspace }}/dist" >> $GITHUB_PATH
 
       - name: Generate preview
         uses: charmbracelet/vhs-action@v2

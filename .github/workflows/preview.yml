@@ -39,4 +39,4 @@ jobs:
         with:
           commit-message: 'chore: Update preview image'
           title: 'chore: Update preview image'
-          branch: preview-$(date +%s)
+          branch: preview-${{ github.run_id }}

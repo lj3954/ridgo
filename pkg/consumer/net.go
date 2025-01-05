@@ -112,7 +112,6 @@ func (s *Search) FindSkus() ([]Sku, error) {
 	if err != nil {
 		return nil, err
 	}
-	fmt.Println(productEditionId)
 	if err := s.permitSession(); err != nil {
 		return nil, err
 	}

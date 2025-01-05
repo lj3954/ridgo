@@ -10,6 +10,7 @@ jobs:
   preview:
     runs-on: ubuntu-latest
     permissions:
+      contents: write
       pull-requests: write
 
     steps:
@@ -22,6 +23,7 @@ jobs:
           sudo apt-get install -y wget
           go build -o ridgo cmd/ridgoCli/main.go
           PATH+=:$(pwd)
+          export PATH
 
       - name: Generate preview
         uses: charmbracelet/vhs-action@v2

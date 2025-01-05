@@ -37,6 +37,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
+          add-paths: .github/preview.gif
           commit-message: 'chore: Update preview image'
           title: 'chore: Update preview image'
           branch: preview-${{ github.run_id }}

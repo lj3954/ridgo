@@ -70,7 +70,7 @@ Type "ridgo 11-ltsc" Sleep 0.5s Enter
 Sleep 2s
 
 Type "wget -O windows-11-arm64.iso $(ridgo 11 English arm64)" Sleep 0.5s Enter
-Sleep 5s
+Sleep 10s
 Ctrl+c
 
-Sleep 2s
+Sleep 1s

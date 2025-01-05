@@ -21,7 +21,7 @@ const (
 
 func fixedRelease(release common.Release) string {
 	if strings.HasSuffix(string(release), "ltsc") {
-		return string(release[:len(release)-4]) + "-enterprise"
+		return string(release[:len(release)-4]) + "enterprise"
 	}
 	return string(release)
 }
